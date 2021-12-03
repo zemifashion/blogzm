@@ -1,0 +1,41 @@
+#post-tab-container {
+    background: #f9f9f9 none repeat scroll 0 0;
+    border: 1px solid #aaa;
+    display: table;
+    font-size: 95%;
+    overflow: hidden;
+    padding: 11px;
+    width: auto;
+    margin: 1em 0;
+}
+#toogle-post-title {
+    cursor: pointer;
+}
+#toogle-post-title {
+    font-weight: 700;
+    text-align: left;
+}
+.post-tab-title i {
+    margin-left: 15px;
+    font-size: 15px;
+}
+#post-tab-container ul {
+    list-style-type: none;
+    counter-reset: item;
+}
+#post-tab-container ul>li {
+    counter-increment: item;
+}
+#post-tab-container ul li {
+    margin-left: 0 !important;
+}
+#post-tab-container ul>li:before {
+    content: counters(item,".") ". ";
+}
+#post-tab-container ul li a:hover {
+    color: #4db2ec;
+    text-decoration: underline !important;
+}
+#post-tab-container ul li a {
+    color: #2a2e30;
+}
